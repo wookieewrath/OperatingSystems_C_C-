@@ -1,0 +1,18 @@
+.TH server 1 "March 26, 2020"
+.SH NAME
+server /- CMPUT379 Assignment 3 Server
+.SH SYNOPSIS
+server <port number>
+.SH DESCRIPTION
+server creates a server using the current machine's IP address and the specified port number.
+The server will wait for requests to process from a client. 
+The client will send the client's machine info, and subsequently an integer for the server to execute the T<n> command, found in the tands.c file.
+The server listens for upto 100 connections. 
+If the server does not receive a request for 60 seconds, it will time out and exit.
+.SH FILES
+server.cpp, client.cpp, tands.c, Makefile
+.SH AUTHORS
+This program was written by Neel Kumar, for University of Alberta's CMPUT379 course.
+Sources are listed in the code.
+.SH "SEE ALSO"
+client

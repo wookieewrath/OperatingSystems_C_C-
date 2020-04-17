@@ -1,0 +1,21 @@
+.TH client 1 "March 26, 2020"
+.SH NAME
+client /- CMPUT379 Assignment 3 Client
+.SH SYNOPSIS
+client <port number> <ip address>
+.SH DESCRIPTION
+client creates a client that sends requests to a server.
+It will send requests to a server with a port number and ip address specified in the command line arguments.
+Once launched, client will take commands from stdin, in the form of either T<n> or S<n>, where n is a positive integer.
+Each command needs to be entered on a new line.
+When the user types and enters 'done', client will begin sending the requests.
+T<n> commands will be send to the server for completion.
+S<n> commands will cause the client to sleep.
+When the client has completed all its commands, it will exit.
+.SH FILES
+server.cpp, client.cpp, tands.c, Makefile
+.SH AUTHORS
+This program was written by Neel Kumar, for University of Alberta's CMPUT379 course.
+Sources are listed in the code.
+.SH "SEE ALSO"
+server
